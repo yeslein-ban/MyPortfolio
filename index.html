@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <h1>My Portfolio</h1>
+      <button class="hamburger" aria-label="Abrir menú">&#9776;</button>
+    </div>
+    <nav class="nav-menu">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#abilites">Skills </a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h2>¡Hi! Soy <span class="highlight"><b>Yes Bandera</b></span></h2>
+      <p>Artista y creativa apasionada por plasmar ideas en la realidad con el desarrollo FrontEnd.
+        Crear web soñadas y únicas para ti es nuestra meta.</p>
+      <button class="contact" onclick="scrollToSection('contact')">¿Estás interesado?</button>
+    </section>
+
+    <section id="about-me" class="about">
+      <h3>About me</h3>
+      <div class="about-content">
+        <div class="profile-upload">
+          <img src="image.png" alt="Foto de perfil">
+        </div>
+        <div class="about-container">
+          <p>
+            Soy una desarrolladora formada en desarrrollo web FrontEnd con pasión de ver a los usuarios interactuar
+            con páginas que tengan sentido, propósito y que realmente lleven el espiritu de la marca o proyecto.</p>
+          <p>Me especializo en HTML, CSS y JavaScript, y siempre estoy en busca de expandir mis horizontes,
+            seguir aprendiendo y retribuyendo a la comunidad.</p>
+          <button class="dirformacion">Conoce más sobre mi formación</button>
+        </div>
+      </div>
+
+      <section id="formacion" class="myformacion">
+        <h4>Formación</h4>
+        <div class="formacion-content">
+          <div class="formacion-item">
+            <p>Bachiller académico del I.E.D. Sofia Camargo de Lleras</p>
+          </div>
+          <div class="formacion-item">
+            <p>Técnico Auxiliar Administrativo en CODETEC</p>
+          </div>
+          <div class="formacion-item">
+            <p>Joven Creativo 2025 - Fundación ROFÉ & Sofka</p>
+          </div>
+        </div>
+        <button class="volver-btn">Volver atrás</button>
+      </section>
+    </section>
+
+    </section>
+
+    <section id="abilites" class="skills">
+      <h4>Mis Habilidades</h4>
+      <div class="skills-container">
+        <div class="skill">
+          <h5>HTML5</h5>
+          <div class="progress">
+            <div class="progress-bar" data-skill="90">90%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <h5>CSS3</h5>
+          <div class="progress">
+            <div class="progress-bar" data-skill="85">85%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <h5>JavaScript</h5>
+          <div class="progress">
+            <div class="progress-bar" data-skill="70">70%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <h5>Responsive Design</h5>
+          <div class="progress">
+            <div class="progress-bar" data-skill="95">95%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <h5>Figma</h5>
+          <div class="progress">
+            <div class="progress-bar" data-skill="65">65%</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="projects" class="projects">
+      <h6>Mis Proyectos</h6>
+      <div class="project-container">
+        <article class="project-card">
+          <p class="title-proj">Libro digital interactivo</p>
+          <p>Un sitio web que le brinda al usuario la experiencia digital de leer un libro personalizado para ocasiones
+            especiales, desarrollados con HTML, CSS y JavaScript.</p>
+          <a href="https://fr-fluffy-book.vercel.app/">Ver proyecto →</a>
+        </article>
+        <article class="project-card">
+          <p class="title-proj">Aplicación Web de Registro de Usuarios</p>
+          <p>Aplicación web que permite llevar una lista de registro, además de analizar las estadísticas de los mismos
+            como la ciudad más popular y la edad promedio.
+          </p>
+          <a href="#">Ver proyecto →</a>
+        </article>
+        <article class="project-card">
+          <p class="title-proj">Mil formas de amar <3 </p>
+              <p>Página web responsive desarrollada para dar una amorosa sorpresa a alguien que amas, con un diseño soft
+                y que toca corazones.</p>
+              <a href="https://projects-zeta-ten-31.vercel.app/main.html">Ver proyecto →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me!</h2>
+      <p>¿Te parece que soy el fit adecuado para tu proyecto? No dudes en contactarme:</p>
+      <div class="contact-info">
+        <div class="contact-container">
+          <address>
+            <p><strong>E-mail:</strong> <a href="mailto:yeslein.bandera@gmail.com">yeslein.bandera@gmail.com</a></p>
+            <p><strong>Teléfono:</strong> +57 301 255 4900</p>
+            <p><strong>Ubicación:</strong> Barranquilla, Colombia</p>
+          </address>
+        </div>
+
+        <form class="formulario" id="contactForm" novalidate>
+          <label class="label" for="nombre">Name or Trade name</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label class="label" for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+
+          <label class="label" for="mensaje">Request</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+
+          <button type="submit">Submit Message</button>
+          <p id="formMsg"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 My Portfolio. Todos los derechos reservados.</p>
+    <div class="social">
+      <a href="#">LinkedIn</a> | <a href="https://github.com/yeslein-ban">GitHub</a> | <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
