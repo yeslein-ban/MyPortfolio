@@ -9,8 +9,8 @@
    display: flex;
    flex-direction: column;
    position: relative;
-   color: #F4A498;
-   padding: 20px 10px;
+   color: whitesmoke;
+   padding: 25px 30px;
  }
 
  .header-content {
@@ -29,30 +29,36 @@
    z-index: 1001;
  }
 
- .nav-menu {
-   position: absolute;
-   top: 100%;
-   left: 0;
-   width: 100%;
-   background-color: #DD614A;
-   transition: transform 0.3s ease-in-out;
-   transform: translateY(-100%);
-   z-index: 1000;
-   visibility: hidden;
- }
+.nav-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #DD614A;
+  transition: transform 0.3s ease-in-out, visibility 0.3s;
+  transform: translateY(-100%);
+  z-index: 1000;
+  visibility: hidden;
+}
+
+.nav-menu.active {
+  transform: translateY(0);
+  visibility: visible;
+}
 
  #home {
-   background-color: #F4A698;
-   font-family: sans-serif;
+   background-color: #73A580;
+   font-family: 'Source Code Pro';
    font-size: 20px;
-   padding: 80px 40px;
+   padding: 180px 80px;
    font-optical-sizing: auto;
    color: #363732;
    align-items: center;
    justify-items: center;
+   text-align: center;
 
    h2 {
-     font-style: italic;
+     font-family: 'Outfit';
      font-size: 30px;
      color: #37180fd4;
      padding: 15px 0;
@@ -63,18 +69,19 @@
      align-items: flex-end;
      justify-content: center;
      align-content: center;
-     background-color: #C5C392;
+     background-color: #DD614A /*#C5C392*/;
      padding: 5px 10px;
      border-radius: 10px;
-     color: #DD614A;
+     color:  #1F2041 /*#DD614A*/;
      margin: 10px 0;
+     margin-top: 30px;
    }
  }
 
  .about {
-   background-color: #73A580;
+   background-color: #f4b898 /*#f89685*/;
    font-family: sans-serif;
-   padding: 60px 40px;
+   padding: 100px 40px;
    padding-top: 20px;
    align-content: space-evenly;
    position: relative;
@@ -84,8 +91,8 @@
    h3 {
      font-family: "Outfit";
      font-size: 75px;
-     color: #C5C392;
-     text-shadow: #1F2041 4px 2px 1px;
+     color:  #1F2041;
+     text-shadow: #C5C392 4px 2px 1px;
    }
 
    .about-content {
@@ -98,10 +105,11 @@
      perspective: 1000px;
 
      .profile-upload {
-       width: 200px;
-       height: 200px;
+       width: 250px;
+       height: 250px;
        border-radius: 50%;
-       background-color: #8eba9a;
+       border: 1px white;
+       background-color: #f7c8c1;
        display: flex;
        align-items: center;
        cursor: pointer;
@@ -122,7 +130,7 @@
      }
 
      p {
-       font-size: 18px;
+       font-size: 20px;
        font-family: sans-serif;
        color: #1F2041;
        margin: 10px 0;
@@ -131,12 +139,12 @@
 
      .dirformacion {
        background-color: #8eba9a;
-       padding: 5px 15px;
+       padding: 10px 15px;
        margin: 10px 0;
        border-radius: 5px;
        align-self: center;
        font-family: "Outfit";
-       font-size: 18px;
+       font-size: 20px;
        color: #1F2041;
      }
    }
@@ -225,14 +233,14 @@
 
  .skills {
    background-color: #8eba9a;
-   padding: 30px 40px;
+   padding: 80px 40px;
    align-items: left;
    justify-content: left;
 
    h4 {
-     font-family: sans-serif;
+     font-family: 'Source Code Pro';
      font-size: 45px;
-     color: #DD614A;
+     color: #1F2041;
      text-align: right;
    }
  }
